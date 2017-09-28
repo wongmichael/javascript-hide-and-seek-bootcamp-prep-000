@@ -21,7 +21,7 @@ function deepestChild(){
     next = current.children[0]
   }
   return current
-  
+/*
   while (current) {
     if (!Array.isArray(current)) {
       return current
@@ -32,4 +32,5 @@ function deepestChild(){
     current = next.shift()
   }
   return null
+  */
 }
