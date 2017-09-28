@@ -2,10 +2,11 @@ function getFirstSelector(sel){
   return document.querySelector(sel)
 }
 function nestedTarget(){
-  return document.getElementById('nested').querySelector('.target')
+  //return document.getElementById('nested').querySelector('.target')
+  return document.querySelector('#nested .target')
 }
 function increaseRankBy(n){
-  var lis = document.querySelectorAll('.ranked-list li')
+  var lis = document.querySelectorAll('.ranked-list')
   for (var i=0;i<lis.length;i++) {
     lis[i].innerHTML = parseInt(lis[i].innerHTML)+n
   }
